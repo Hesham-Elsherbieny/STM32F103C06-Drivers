@@ -8,7 +8,7 @@
  *                                                                                          *
  * Date        : Dec 2019                                                                   *
  *                                                                                          *
- * Version     : 3.1.1                                                                      *
+ * Version     : 3.1.2                                                                      *
  *                                                                                          *
  * Description : Specifies Standard Types Library used for the embedded/automotive drivers  *
  *                                                                                          *
@@ -52,11 +52,11 @@
     NOK
   }ERROR_t;
   
-  /* Structrue Data Type to define Boolean DataType either 'TRUE' or 'FALSE' */
+  /* Structure Data Type to define Boolean DataType either 'TRUE' or 'FALSE' */
   typedef enum
   {
-    TRUE,
-    FALSE
+    FALSE,
+    TRUE
   }bool;
 
 #endif /* TYPES_H_ */
