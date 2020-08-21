@@ -8,7 +8,7 @@
  *                                                                                          *
  * Date        : Jan 2020                                                                   *
  *                                                                                          *
- * Version     : 2.1.1                                                                      *
+ * Version     : 2.1.2                                                                      *
  *                                                                                          *
  * Description : specifies Reset and Clock Control (RCC) module and the required macros and *
  *               needed APIs for Cortex M3 STM32F103 microcontroller                        *                                                       *
@@ -16,7 +16,7 @@
  ********************************************************************************************/
 
 #include "STD_TYPES.h"
-#include "BIT_MATH.h"
+
 #include "RCC.h"
 
 /*********************************RCC Registers**************************************/
@@ -35,7 +35,7 @@ typedef struct
 }RCC_Reg;
 
 /******* RCC Base Address ************/
-#define RCC ((RCC_Reg*)0x40021000)
+#define RCC ((volatile RCC_Reg*)0x40021000)
 
 /* This API shall Enable High Speed Clock Source          */
 ERROR_t RCC_EnablelHSClock(u32 RCC_HSClockName)
